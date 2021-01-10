@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #READING THE INPUT DATASET////////////////////////////////
-df = pd.read_csv('Carleton.csv', index_col=None,encoding= 'unicode_escape' )
+df = pd.read_csv('DATA.csv', index_col=None,encoding= 'unicode_escape' )
 
 #PRE PROSSEING THE TEXT ////////////////////////////////
 df['text'] = df['text'].apply(lambda x: " ".join(x.lower() for x in x.split()))#CHANGING COLUMN NAMED "text" TO LOWERCASE
